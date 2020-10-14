@@ -35,12 +35,16 @@ html,body{
   justify-content: space-around;
   align-items: center;
 }
+.navbar-left{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .burger div{
   width: 40px;
     height: 5px;
     margin: 4px;
     background-color: var(--mainPink);
-  /* display: none; */
   visibility: hidden;
 }
 
@@ -87,6 +91,14 @@ padding: 0 20px;
   border: none;
 }
 
+/* to create white area */
+.white{
+  margin-bottom:230px;
+}
+.show{
+  visibility: visible !important;
+  /* display: visible; */
+}
 @media (max-width: 1155px) {
   .burger div{
     /* display: inline; */
@@ -96,7 +108,7 @@ padding: 0 20px;
     display: none!important;
   }
   .nav-bar{
-  
+    display: none;
    justify-content: space-between;
    align-items: flex-start;
 
@@ -105,6 +117,15 @@ padding: 0 20px;
     flex-direction: column;
     /* position: absolute; */
     right: 0;
+  }
+  .nav-links{
+    visibility: hidden;
+    /* display: none; */
+    z-index: 1;
+    position: absolute;
+    margin-top: 280px;
+    margin-left: -50vw;
+    width: 140px;
   }
 }
 /* navbar ends */

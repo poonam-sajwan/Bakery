@@ -1,615 +1,442 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- bootstrap css -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <!-- main css -->
-  <link rel="stylesheet" href="css/style.css">
-  <!-- favicon-->
-  <link rel="icon" href="favicon.ico">
-  <!-- google fonts-->
-  <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Restaurant</title>
 
-  <!-- font awesome -->
   <!-- <link rel="stylesheet" href="css/all.css"> -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
 
-  <title>Aamaa's Kitchen</title>
-  <style>
-  </style>
+  <!-- custom style sheet -->
+  <link rel="stylesheet" href="main.css">
+
+  <!-- favicon -->
+  <link rel="icon" href="favicon.ico">
+
+  <!-- google fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-
-  <header id="header">
-    <nav class="navbar navbar-expand-lg px-4">
-      <a href="#" class="navbar-brand">
-        <img id="logo" src="img/logo.jpg" alt="ain icon">
-      </a>
-      <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target=".navbar-collapse" id="myNavbar">
-        <span class="toggler-icon">
-          <i class="fas fa-bars"></i>
-        </span>
-      </button>
-      <div class="collapse navbar-collapse" id="#myNavbar">
-        <ul class="navbar-nav text-capitalize mx-auto">
-          <li class="nav-item active">
-            <a href="#header" class="nav-link">home</a>
-          </li>
-
-          <li class="nav-item active">
-            <a href="#about" class="nav-link">about</a>
-          </li>
-
-          <li class="nav-item active">
-            <a href="#store" class="nav-link">store</a>
-          </li>
-
-          <li class="nav-item active">
-            <a href="#services" class="nav-link">services</a>
-          </li>
-
-          <li class="nav-item active">
-            <a href="#cakes" class="nav-link">Speciality</a>
-          </li>
+  <!-- navbar starts here -->
+  <nav class="navbar">
+    <!-- <div class="navbar-left"> -->
+      <div class="logo-class">
+        <img id="logo" src="img/logo.jpg" alt="logo">
+      </div>
+      <div class="nav-links">
+        <ul class="nav-ul">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Store</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Speciality</a></li>
         </ul>
-        <div class="nav-info-items d-none d-lg-flex">
-          <div class=" nav-info align-items-center d-flex justify-content-between mx-lg-5">
-            <span class="infoo-icon mx-lg-3">
-              <i class="fas fa-phone"></i>
-            </span>
-            <p class="mb-0">+91 2345678910</p>
-          </div>
-
-          <div id="cart-info" class="nav-info align-items-center cart-info d-fex justify-content-between mx-lg-5">
-            <p class="mb-0 px-2 text-capitalize">
-            <span class="cart-info_icon mr-lg-3">
-              <i class="fas fa-shopping-cart"></i>
-            </span>
-
-              <span id="item-count">2</span>
-              items- Rs.
-              <span class="item-total">438</span>
-            </p>
-          </div>
-        </div>
       </div>
-    </nav> <!-- nav ends here-->
-
-
-    <div class="container-fluid">
-      <div class="row max-height justify-content-center align-items-center">
-        <div class="col-10 mx-auto banner text-center">
-          <h1 class="text-capitalize">
-            welcome to <strong class="banner-title">Aama's</strong>
-          </h1>
-          <a href="#store" class="btn btn-black banner-link text-uppercase my-2">Explore</a>
+      <div class="nav-phone">
+        <p class="mb-0"><span class="icon">
+            <i class="fas fa-phone"></i>
+          </span> +91 2345678910</p>
+      </div>
+      <div class="cart">
+        <p> <span class="icon">
+            <i class="fas fa-shopping-cart"></i>
+          </span> 2items- Rs.1400</p>
+      </div>
+    <!-- </div> -->
     </div>
-          <div class="cart" id="cart">
+    <div class="burger">
+      <div class=""></div>
+      <div class=""></div>
+      <div class=""></div>
+    </div>
+  </nav>
+  <!-- navbar ends here -->
 
-            <!-- cart item-->
-            <div class="cart-item d-flex justify-content-between text-capitalizemy-3 pb-3">
-              <img src="img/z-sweets-3.jpeg" class="img-fluid rounded-circle " id="item-img" alt="">
-              <div class="item-text">
-                <p id="cart-item-title" class="font-weight-bold mb-0">
-                  cart item</p>
-                  <span>Rs.</span>
-                  <span id="cart-item-price" class="cart-item-price mb-0">650</span>
-              </div>
-              <a href="#" id="cart-item-remove" class="cart-item-remove">
-                <i class="fas fa-trash"></i>
-              </a>
-            </div>
-            <!-- cart item ends here-->
+  <div class="main-page">
+    <div class="main-page-content">
+      <h1>Welcome to <span class="pink-heading">Aama's</span></h1>
+    </div>
+    <div class="black-button">
+      <h2>Explore</h2>
+    </div>
+  </div>
 
-                        <!-- cart item-->
-                        <div class="cart-item d-flex justify-content-between text-capitalizemy-3">
-                          <img src="img/z-sweets-3.jpeg" class="img-fluid rounded-circle " id="item-img" alt="">
-                          <div class="item-text">
-                            <p id="cart-item-title" class="font-weight-bold mb-0">
-                              cart item</p>
-                              <span>Rs.</span>
-                              <span id="cart-item-price" class="cart-item-price mb-0">650</span>
-                          </div>
-                          <a href="#" id="cart-item-remove" class="cart-item-remove">
-                            <i class="fas fa-trash"></i>
-                          </a>
-                        </div>
-                        <!-- cart item ends here-->
-
-                        <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
-                          <h5>total</h5>
-                          <h5>Rs. <strong id="cart-total" class="font-weight-bold">1300</strong></h5>
-                        </div>
-
-
-                        <div class="cart-buttons-container mt-3 d-flex justify-content-between">
-                          <a href="#" id="clear-cart" class="btn btn-black text-uppercase">clear cart</a>
-                          <a href="#" id="clear-cart" class="btn btn-pink text-uppercase">checkout</a>
-                        </div>
-          </div>
-
-
-
-
-        </div>
+  <!-- about starts here -->
+  <div class="about">
+    <div class="about-content">
+      <div class="about-title">
+        <h1>About <span class="pink-heading">Us</span></h1>
+      </div>
+      <div class="about-inside-content">
+        <p>We are a small kitchen that use aama's age old receipes to deliver an Organic and heathy taste to your plate. We use our farm grown vegies and spices to make your meal full of wellness of mother nature.
+          Come join us at <strong>Aama's</strong> to make friends with taste and goodness. </p>
+      </div>
+    </div>
+    <div class="about-img">
+      <img src="img/cupcake-1.jpg" class="" alt="">
+      <div class="transition">
 
       </div>
 
     </div>
+  </div>
+  <!-- about ends here -->
 
-  </header>
+  <!-- store starts here -->
+  <div class="store">
+    <div class="store-heading">
+      <h2>Our <span class="pink-heading">Store</span></h2>
+    </div>
+    <div class="store-items">
+      <a href="#" class="black-button" data-filter="all">all</a>
 
+      <a href="#" class="black-button" data-filter="all">cakes</a>
+      <a href="#" class="black-button" data-filter="all">cupcakes</a>
+      <a href="#" class="black-button" data-filter="all">sweets</a>
+      <a href="#" class="black-button" data-filter="all">doughnuts</a>
+    </div>
+    <div class="store-search">
+      <span class="" id="search-icon">
+        <i class="fas fa-search"></i>
+      </span>
 
-
-  <section class="about py-5 px-4" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-10 mx-auto col-md-6 my-5">
-          <h1 class="text-capitalize">about <strong class="banner-title">us</strong></h1>
-          <p my-4 text-muted w-75>We are a small kitchen that use aama's age old receipes to deliver an Organic and heathy taste to your plate. We use our farm grown vegies and spices to make your meal full of wellness of mother nature.
-            Come join us at <strong class="banner-title" style="font-size:1rem;">Aama's</strong> to make friends with taste and goodness. </p>
-          <a href="#" class="btn btn-black text-uppercase">Explore</a>
-        </div>
-        <div class="col-10 mx-auto col-md-6 my-5 align-self-center">
-          <div class="about-img__container">
-            <img src="img/cupcake-1.jpg" class=img-fluid alt="">
-
-          </div>
-        </div>
-
-      </div>
+      <input type="text" class="search-input" placeholder="item.." name="" value="">
 
     </div>
+  </div>
+  <!-- store ends here -->
 
-  </section>
+  <!-- food items starts here -->
+  <div class="food-items">
 
-
-
-  <section class="store py-5" id="store">
-    <div class="container">
-      <div class="row">
-        <div class="col-10 mx-auto col-sm-6 text-center">
-          <h1 class="text-capitalize">Our <strong class="banner-title">store</strong>
-          </h1>
-        </div>
+    <!-- single item starts -->
+    <div class="card" data-item="sweets">
+      <div class="img-container">
+        <img src="img/sweets-1.jpg" class="store-img" alt="">
+        <span class="store-item-icon">
+          <i class="fas fa-shopping-cart"></i>
+        </span>
       </div>
-
-
-
-      <div class="row ">
-        <div class="col-lg-8 mx-auto d-flex justify-content-around sortBtn flex-wrap">
-          <a href="#" class="btn btn-black text-uppercase filter-btn m-2" data-filter="all">all</a>
-
-          <a href="#" class="btn btn-black text-uppercase filter-btn m-2" data-filter="all">cakes</a>
-          <a href="#" class="btn btn-black text-uppercase filter-btn m-2" data-filter="all">cupcakes</a>
-          <a href="#" class="btn btn-black text-uppercase filter-btn m-2" data-filter="all">sweets</a>
-          <a href="#" class="btn btn-black text-uppercase filter-btn m-2" data-filter="all">doughnuts</a>
-        </div>
+      <div class="card-content">
+        <h5 id="item-name">Donughts</h5>
+        <h5 class="item-value">Rs.<strong id="store-item-price" class="font-weight-bold">200</strong></h5>
       </div>
-
-      <!-- search box-->
-      <div class="row">
-        <div class="col-10 mx-auto col-md-6">
-          <form class="" action="index.html" method="post">
-            <div class="input-group mb-3">
-              <span class="input-group-text search-box" id="search-icon">
-                <i class="fas fa-search"></i>
-
-              </span>
-              <input type="text" class="from-control w-80" placeholder="item.." name="" value="" >
-
-            </div>
-          </form>
-
-        </div>
-
-      </div>
-      <!-- search box ends here-->
-
-      <!--store items-->
-      <div class="row store-items" id="store-items">
-        <!-- single item 1-->
-        <div class="col-10 col-sm-6 col-lg-4 mx.auto my-3 store-item sweet" data-item="sweets">
-          <div class="card single-item">
-            <div class="img-container">
-              <img src="img/sweets-1.jpg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">donughts</h5>
-                <h5 class="store-item-value">Rs.<strong id="store-item-price" class="font-weight-bold">200</strong></h5>
-              </div>
-
-            </div>
-          </div>
-        </div>
-        <!-- ends here single item-->
-
-        <!-- single item-->
-        <div class="col-10 col-sm-6 col-lg-4 mx.auto my-3 store-item sweet" data-item="sweets">
-          <div class="card single-item">
-            <div class="img-container">
-              <img src="img/cupcake-1.jpg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">pancake</h5>
-                <h5 class="store-item-value">Rs.<strong id="store-item-price" class="font-weight-bold">200</strong></h5>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-
-
-        <!-- single item-->
-        <div class="col-10 col-sm-6 col-lg-4 mx.auto my-3 store-item sweet" data-item="sweets">
-          <div class="card single-item">
-            <div class="img-container">
-              <img src="img/cake-1.jpeg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">cake</h5>
-                <h5 class="store-item-value">Rs.<strong id="store-item-price" class="font-weight-bold">500</strong></h5>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <!-- single item-->
-        <div class="col-10 col-sm-6 col-lg-4 mx.auto my-3 store-item sweet" data-item="sweets">
-          <div class="card single-item">
-            <div class="img-container">
-              <img src="img/doughnut-1.jpg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">Burger</h5>
-                <h5 class="store-item-value">Rs.<strong id="store-item-price" class="font-weight-bold">200</strong></h5>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <!-- single item-->
-        <div class="col-10 col-sm-6 col-lg-4 mx.auto my-3 store-item sweet" data-item="sweets">
-          <div class="card single-item">
-            <div class="img-container">
-              <img src="img/sweets-2.jpg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">smoothies</h5>
-                <h5 class="store-item-value">Rs.<strong id="store-item-price" class="font-weight-bold">250</strong></h5>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-        <!-- single item-->
-        <div class="col-10 col-sm-6 col-lg-4 mx.auto my-3 store-item sweet" data-item="sweets">
-          <div class="card single-item">
-            <div class="img-container">
-              <img src="img/cupcake-2.jpg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">Aata noodles</h5>
-                <h5 class="store-item-value">Rs.<strong id="store-item-price" class="font-weight-bold">200</strong></h5>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-        <!-- single item-->
-        <div class="col-10 col-sm-6 col-lg-4 mx.auto my-3 store-item sweet" data-item="sweets">
-          <div class="card single-item">
-            <div class="img-container">
-              <img src="img/cake-2.jpg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">cake</h5>
-                <h5 class="store-item-value">Rs.<strong id="store-item-price" class="font-weight-bold">500</strong></h5>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-        <!-- single item-->
-        <div class="col-10 col-sm-6 col-lg-4 mx.auto my-3 store-item sweet" data-item="sweets">
-          <div class="card single-item">
-            <div class="img-container">
-              <img src="img/doughnut-2.jpg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">Sandwiches</h5>
-                <h5 class="store-item-value">Rs.<strong id="store-item-price" class="font-weight-bold">250</strong></h5>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-        <!-- single item-->
-        <div class="col-10 col-sm-6 col-lg-4 mx.auto my-3 store-item sweet" data-item="sweets">
-          <div class="card single-item">
-            <div class="img-container">
-              <img src="img/sweets-3.jpg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">sweet item</h5>
-                <h5 class="store-item-value">Rs.<strong id="store-item-price" class="font-weight-bold">200</strong></h5>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-        <!-- single item-->
-        <div class="col-10 col-sm-6 col-lg-4 mx.auto my-3 store-item sweet" data-item="sweets">
-          <div class="card single-item">
-            <div class="img-container">
-              <img src="img/cupcake-3.jpg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">Veg pakoras</h5>
-                <h5 class="store-item-value">Rs.<strong id="store-item-price" class="font-weight-bold">350</strong></h5>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-        <!-- single item-->
-        <div class="col-10 col-sm-6 col-lg-4 mx.auto my-3 store-item sweet" data-item="sweets">
-          <div class="card single-item">
-            <div class="img-container">
-              <img src="img/cake-3.jpg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">Pastry</h5>
-                <h5 class="store-item-value">Rs.<strong id="store-item-price" class="font-weight-bold">350</strong></h5>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-        <!-- single item-->
-        <div class="col-10 col-sm-6 col-lg-4 mx.auto my-3 store-item sweet" data-item="sweets">
-          <div class="card single-item">
-            <div class="img-container">
-              <img src="img/doughnut-3.jpg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-            </div>
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between text-capitalize">
-                <h5 id="store-item-name">Fruit-made ice-cream</h5>
-                <h5 class="store-item-value">Rs.<strong id="store-item-price" class="font-weight-bold">350</strong></h5>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--store items end here-->
     </div>
+    <!-- single item ends -->
 
-  </section>
 
+    <!-- single item starts -->
+    <div class="card" data-item="sweets">
+      <div class="img-container">
+        <img src="img/sweets-2.jpg" class="store-img" alt="">
+        <span class="store-item-icon">
+          <i class="fas fa-shopping-cart"></i>
+        </span>
+      </div>
+      <div class="card-content">
+        <h5 id="item-name">Smoothies</h5>
+        <h5 class="item-value">Rs.<strong id="store-item-price" class="font-weight-bold">200</strong></h5>
+      </div>
+    </div>
+    <!-- single item ends -->
+
+
+    <!-- single item starts -->
+    <div class="card" data-item="sweets">
+      <div class="img-container">
+        <img src="img/cupcake-1.jpg" class="store-img" alt="">
+        <span class="store-item-icon">
+          <i class="fas fa-shopping-cart"></i>
+        </span>
+      </div>
+      <div class="card-content">
+        <h5 id="item-name">Pancake</h5>
+        <h5 class="item-value">Rs.<strong id="store-item-price" class="font-weight-bold">200</strong></h5>
+      </div>
+    </div>
+    <!-- single item ends -->
+    <!-- single item starts -->
+    <div class="card" data-item="sweets">
+      <div class="img-container">
+        <img src="img/cake-1.jpeg" class="store-img" alt="">
+        <span class="store-item-icon">
+          <i class="fas fa-shopping-cart"></i>
+        </span>
+      </div>
+      <div class="card-content">
+        <h5 id="item-name">Cake</h5>
+        <h5 class="item-value">Rs.<strong id="store-item-price" class="font-weight-bold">500</strong></h5>
+      </div>
+    </div>
+    <!-- single item ends -->
+    <!-- single item starts -->
+    <div class="card" data-item="sweets">
+      <div class="img-container">
+        <img src="img/doughnut-1.jpg" class="store-img" alt="">
+        <span class="store-item-icon">
+          <i class="fas fa-shopping-cart"></i>
+        </span>
+      </div>
+      <div class="card-content">
+        <h5 id="item-name">Burger</h5>
+        <h5 class="item-value">Rs.<strong id="store-item-price" class="font-weight-bold">200</strong></h5>
+      </div>
+    </div>
+    <!-- single item ends -->
+    <!-- single item starts -->
+    <div class="card" data-item="sweets">
+      <div class="img-container">
+        <img src="img/sweets-2.jpg" class="store-img" alt="">
+        <span class="store-item-icon">
+          <i class="fas fa-shopping-cart"></i>
+        </span>
+      </div>
+      <div class="card-content">
+        <h5 id="item-name">Smoothies</h5>
+        <h5 class="item-value">Rs.<strong id="store-item-price" class="font-weight-bold">250</strong></h5>
+      </div>
+    </div>
+    <!-- single item ends -->
+
+
+    <!-- single item starts -->
+    <div class="card" data-item="sweets">
+      <div class="img-container">
+        <img src="img/cupcake-2.jpg" class="store-img" alt="">
+        <span class="store-item-icon">
+          <i class="fas fa-shopping-cart"></i>
+        </span>
+      </div>
+      <div class="card-content">
+        <h5 id="item-name">Aata noodles</h5>
+        <h5 class="item-value">Rs.<strong id="store-item-price" class="font-weight-bold">200</strong></h5>
+      </div>
+    </div>
+    <!-- single item ends -->
+
+    <!-- single item starts -->
+    <div class="card" data-item="sweets">
+      <div class="img-container">
+        <img src="img/cake-2.jpg" class="store-img" alt="">
+        <span class="store-item-icon">
+          <i class="fas fa-shopping-cart"></i>
+        </span>
+      </div>
+      <div class="card-content">
+        <h5 id="item-name">Cake</h5>
+        <h5 class="item-value">Rs.<strong id="store-item-price" class="font-weight-bold">500</strong></h5>
+      </div>
+    </div>
+    <!-- single item ends -->
+
+    <!-- single item starts -->
+    <div class="card" data-item="sweets">
+      <div class="img-container">
+        <img src="img/doughnut-2.jpg" class="store-img" alt="">
+        <span class="store-item-icon">
+          <i class="fas fa-shopping-cart"></i>
+        </span>
+      </div>
+      <div class="card-content">
+        <h5 id="item-name">Sandwiches</h5>
+        <h5 class="item-value">Rs.<strong id="store-item-price" class="font-weight-bold">250</strong></h5>
+      </div>
+    </div>
+    <!-- single item ends -->
+
+    <!-- single item starts -->
+    <div class="card" data-item="sweets">
+      <div class="img-container">
+        <img src="img/sweets-3.jpg" class="store-img" alt="">
+        <span class="store-item-icon">
+          <i class="fas fa-shopping-cart"></i>
+        </span>
+      </div>
+      <div class="card-content">
+        <h5 id="item-name">Sweet item</h5>
+        <h5 class="item-value">Rs.<strong id="store-item-price" class="font-weight-bold">200</strong></h5>
+      </div>
+    </div>
+    <!-- single item ends -->
+
+    <!-- single item starts -->
+    <div class="card" data-item="sweets">
+      <div class="img-container">
+        <img src="img/cupcake-3.jpg" class="store-img" alt="">
+        <span class="store-item-icon">
+          <i class="fas fa-shopping-cart"></i>
+        </span>
+      </div>
+      <div class="card-content">
+        <h5 id="item-name">Veg pakoras</h5>
+        <h5 class="item-value">Rs.<strong id="store-item-price" class="font-weight-bold">350</strong></h5>
+      </div>
+    </div>
+    <!-- single item ends -->
+
+    <!-- single item starts -->
+    <div class="card" data-item="sweets">
+      <div class="img-container">
+        <img src="img/cake-3.jpg" class="store-img" alt="">
+        <span class="store-item-icon">
+          <i class="fas fa-shopping-cart"></i>
+        </span>
+      </div>
+      <div class="card-content">
+        <h5 id="item-name">Pastry</h5>
+        <h5 class="item-value">Rs.<strong id="store-item-price" class="font-weight-bold">350</strong></h5>
+      </div>
+    </div>
+    <!-- single item ends -->
+  </div>
+
+  <!-- food items ends here -->
 
   <!-- services-->
-  <section id="services" class="services py-5">
+  <section class="services">
+
     <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center my-3">
-        <h1>Services</h1>
-      </div>
-        <!-- single -->
-        <div class="col-md-4 text-center my-3">
-          <img src="img/bread-icon.png" alt="bread">
-          <h6 class="text-uppercase my-3 service-title">Bread</h6>
-          <p class="w-75 mx-auto text-left services-text">We prepare the softest breads, that add joy to your sweets.</p>
-
-        </div>
-        <!-- single end -->
-        <!-- single -->
-        <div class="col-md-4 text-center my-3">
-          <img src="img/cupcake-icon.png" alt="cupcake">
-          <h6 class="text-uppercase my-3 service-title">Cupcake</h6>
-          <p class="w-75 mx-auto text-left services-text">If you wish to add sweetness to your life, come enjoy our cupcake!</p>
-
-        </div>
-        <!-- single end -->
-        <!-- single -->
-        <div class="col-md-4 text-center my-3">
-          <img src="img/candy-icon.png" alt="candy">
-          <h6 class="text-uppercase my-3 service-title">candy</h6>
-          <p class="w-75 mx-auto text-left services-text">All types of candies, from stove to your hand!</p>
-
-        </div>
-        <!-- single end -->
-      </div>
-
+      <h1>Services</h1>
     </div>
+
+    <div class="services-container">
+      <div class="services-1">
+        <img src="img/bread-icon.png" alt="bread">
+        <h6 class="service-title">Bread</h6>
+        <p class="services-text">We prepare the softest breads, that add joy to your sweets.</p>
+
+      </div>
+      <!-- single end -->
+      <!-- single -->
+      <div class="services-2">
+        <img src="img/cupcake-icon.png" alt="cupcake">
+        <h6 class="service-title">Cupcake</h6>
+        <p class="services-text">If you wish to add sweetness to your life, come enjoy our cupcake!</p>
+
+      </div>
+      <!-- single end -->
+      <!-- single -->
+      <div class="services-3">
+        <img src="img/candy-icon.png" alt="candy">
+        <h6 class="service-title">candy</h6>
+        <p class="services-text">All types of candies, from stove to your hand!</p>
+
+      </div>
+      <!-- single end -->
+    </div>
+    <!-- single -->
+
 
   </section>
   <!-- services end here-->
 
   <!-- cakes section-->
-  <section class="cakes py-5">
-    <div class="container">
-      <!--cake title-->
-     <div class="row">
-       <div class="col-10 mx-auto col-sm-6 text-center">
-         <h1 class="text-capitalize" id="cakes">our<strong class="banner-title">Speciality</strong></h1>
-       </div>
-     </div>
-     <!--cake title ends here-->
-     <div class="row">
-       <!-- single cake-->
-       <div class="col-11 mx-auto col-md-6 col-lg-4 my-4 text-capitalize">
-          <h3 class="py-3">Farm grown vegies</h3>
-          <div class="text-muted">
-            <p class="my-3">All vegetables and fruits our grown within our own farm.</p>
-            <p class="my-3">Choose your own vegies</p>
-            <p class="my-3">Get surprise visit to our farm</p>
-            <p class="my-3">Custom receipes</p>
-            <!-- <button type="button" class="btn btn-pink text-capitalize mb-3" name="button">Order now</button> -->
-            <!-- <p class="text-lowercase mb-4">starting at Rs. 400</p> -->
-            <img src="img/trans-cake.jpg" class="img-fluid trans" alt="">
-          </div>
-       </div>
-       <!-- single cake ends here-->
+  <section class="speciality">
+    <!--cake title-->
+    <div class="speciality-1">
+      <h1 class="" id="cakes">our <strong class="pink-heading">Speciality</strong></h1>
+    </div>
+    <!--cake title ends here-->
 
-       <!-- single cake-->
-       <div class="col-11 mx-auto col-md-6 col-lg-4 my-4 text-capitalize">
-          <h3 class="py-3">Organic spices</h3>
-          <div class="text-muted">
-            <p class="my-3">Home-made spices used to prepare meals</p>
-            <p class="my-3">We say no to chemical filled market spices and ingredients</p>
-            <p class="my-3">Custom spices</p>
-            <p class="my-3">Come taste the real spices of India</p>
+    <div class="speciality-2">
+      <!-- single cake-->
+      <div class="speciality-2-1">
+        <h3 class="">Farm grown vegies</h3>
+        <div class="speciality-2-text">
+          <p class="my-3">All vegetables and fruits our grown within our own farm.</p>
+          <p class="my-3">Choose your own vegies</p>
+          <p class="my-3">Get surprise visit to our farm</p>
+          <p class="my-3">Custom receipes</p>
+        </div>
+        <div class="speciality-img">
+          <img src="img/trans-cake.jpg" class="img-fluid trans" alt="">
+        </div>
+      </div>
 
-            <!-- <button type="button" class="btn btn-pink text-capitalize mb-3" name="button">Order now</button>
-            <p class="text-lowercase mb-4">starting at Rs. 400</p> -->
-            <img src="img/trans-wedding.jpg" class="img-fluid trans" alt="">
-          </div>
-       </div>
-       <!-- single cake ends here-->
+      <div class="speciality-2-1">
+        <h3 class="">Organic spices</h3>
+        <div class="speciality-2-text">
+          <p class="my-3">Home-made spices</p>
+          <p class="my-3">We say no to chemical filled market spices and ingredients</p>
+          <p class="my-3">Custom spices</p>
+          <p class="my-3">Come taste the real spices of India</p>
+        </div>
+        <div class="speciality-img">
+          <img src="img/trans-wedding.jpg" class="img-fluid trans" alt="">
+        </div>
+      </div>
 
-       <!-- single cake-->
-       <div class="col-11 mx-auto col-md-6 col-lg-4 my-4 text-capitalize">
-          <h3 class="py-3">handmade breads</h3>
-          <div class="text-muted">
-            <p class="my-3">Choose from the softest handmade breads</p>
-            <p class="my-3">We say no to refined wheat flour</p>
-            <p class="my-3">We say yes to native wheat flour</p>
-            <p class="my-3">Direct from oven to your plate, which by the way is also handmade</p>
-            <!-- <button type="button" class="btn btn-pink text-capitalize mb-3" name="button">Order now</button>
-            <p class="text-lowercase mb-4">starting at Rs. 400</p> -->
-            <img src="img/trans-custom.jpg" class="img-fluid trans" alt="">
-          </div>
-       </div>
-       <!-- single cake ends here-->
-     </div>
+      <div class="speciality-2-1">
+        <h3 class="">handmade breads</h3>
+        <div class="speciality-2-text">
+          <p class="my-3">Choose from the softest handmade breads</p>
+          <p class="my-3">We say no to refined wheat flour</p>
+          <p class="my-3">We say yes to native wheat flour</p>
+          <p class="my-3">Direct from oven to your plate</p>
+        </div>
+        <div class="speciality-img">
+          <img src="img/trans-custom.jpg" class="img-fluid trans" alt="">
+        </div>
+      </div>
+      <!-- single cake ends here-->
+
+
     </div>
 
   </section>
+
+
   <footer>
-    <div class="container-fluid">
 
-      <div class="row">
+    <div class="footer-1">
 
-      <div class="col-md-6 footer py-5">
-        <h1 class="text-center text-capitalize"><strong class="banner-title">Aama's</strong></h1>
-        <div class="footer-icons mt-3 d-flex justify-content-around flex-wrap">
-          <a href="#" class="footer-icon"><i class="fab fa-facebook"></i></a>
-          <a href="#" class="footer-icon"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="footer-icon"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="footer-icon"><i class="fab fa-google-plus"></i></a>
-        </div>
-
+      <h1 class="footer-1-title"><strong class="pink-heading">Aama's</strong></h1>
+      <div class="footer-1-icons">
+        <a href="#" class="footer-icon"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="footer-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="footer-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="footer-icon"><i class="fab fa-google-plus"></i></a>
       </div>
 
-      <div class="col-md-6 footer-contact text-center text-capitalize p-5">
-        <h3 class="mb-5">Contact</h3>
-        <p class="d-flex flex-wrap">
-         <span class="mr-4 footer-icon">
-           <i class="fas fa-map"></i>
-         </span>
-         <span> Do Gaon, Nainital road</span>
-         </p>
-
-         <p class="d-flex flex-wrap">
-          <span class="mr-4 footer-icon">
-            <i class="fas fa-phone"></i>
-          </span>
-          <span> +91 2345678910</span>
-           </p>
-
-           <p class="d-flex flex-wrap">
-           <span class="mr-4 footer-icon">
-             <i class="fas fa-envelope"></i>
-           </span>
-           <span> aamas@gmail.com</span>
-           </p>
-      </div>
-       </div>
     </div>
+
+    <div class="footer-2">
+
+      <h3 class="footer-2-title">Contact</h3>
+
+      <p class="footer-2-1">
+        <span class="mr-4 footer-icon">
+          <i class="fas fa-map"></i>
+        </span>
+        <span> Do Gaon, Nainital road</span>
+      </p>
+
+      <p class="footer-2-1">
+        <span class="mr-4 footer-icon">
+          <i class="fas fa-phone"></i>
+        </span>
+        <span> +91 2345678910</span>
+      </p>
+
+      <p class="footer-2-1">
+        <span class="mr-4 footer-icon">
+          <i class="fas fa-envelope"></i>
+        </span>
+        <span> aamas@gmail.com</span>
+      </p>
+
+    </div>
+
+
 
 
   </footer>
   <!-- cakes section ends here-->
-  <!-- jquery -->
   <script src="js/app.js"></script>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
-
 </body>
 
 </html>
